@@ -1,7 +1,7 @@
 enum TaskStatus {
   backlog('Backlog', 0xFF9E9E9E),
   todo('To do', 0xFF2196F3),
-  doing(Doing', 0xFFFFC107),
+  doing('Doing', 0xFFFFC107),
   done('Done', 0xFF4CAF50);
 
   // Campos dentro do enum

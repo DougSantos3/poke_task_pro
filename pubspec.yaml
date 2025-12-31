@@ -1,0 +1,29 @@
+name: poke_task_pro
+description: A Trello-style to-do app with Pokémon using Clean Architecture
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter: 
+    sdk: flutter
+  # Compare objects (DDD)
+  equatable: ^2.0.5
+  # To manage routes and state in a simple way(optional, but common)
+  get_it: ^7.6.0
+  # For api calls
+  http: ^1.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  # To create mocks in unit tests
+  mocktail: ^1.0.3
+  # To ensure the code follows Clean Code principles
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/

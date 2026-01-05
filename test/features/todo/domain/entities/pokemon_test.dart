@@ -5,19 +5,19 @@ void main() {
   group('Pokemon Entity', () {
     test('Two pokemon with the same data should be considered equal(equatable)',
         () {
-      const p1 = Pokemon(
+      final p1 = Pokemon(
           id: 1,
           name: 'Bulbasaur',
-          types: ['Grass'],
+          types: const ['Grass'],
           evolutionLevel: 16,
-          weaknesses: ['Fire'],
+          weaknesses: const ['Fire'],
           imageUrl: '');
-      const p2 = Pokemon(
+      final p2 = Pokemon(
           id: 1,
           name: 'Bulbasaur',
-          types: ['Grass'],
+          types: const ['Grass'],
           evolutionLevel: 16,
-          weaknesses: ['Fire'],
+          weaknesses: const ['Fire'],
           imageUrl: '');
 
       expect(p1, equals(p2));

@@ -1,5 +1,3 @@
-
-
 import 'package:poke_task_pro/features/todo/domain/entities/task.dart';
 
 abstract class TodoRepository {

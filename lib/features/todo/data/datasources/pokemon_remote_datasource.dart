@@ -7,13 +7,14 @@ abstract class PokemonRemoteDataSource {
   Future<PokemonModel> getPokemon(int id);
 }
 
-class PokemonDataSourceImpl implements PokemonRemoteDataSource {
+class PokemonRemoteDataSourceImpl implements PokemonRemoteDataSource {
   final http.Client client;
 
-  PokemonDataSourceImpl({required this.client});
+  PokemonRemoteDataSourceImpl({required this.client});
 
   @override
   Future<PokemonModel> getPokemon(int id) async {
+    //Responsável por fazer a chamada http real para a PokeAPI.
     // TODO: implement getPokemon
     final response = await client.get(
       Uri.parse('https://pokeapi.co/api/v2/pokemon/$id'),

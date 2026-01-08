@@ -1,4 +1,4 @@
-// E num Avançado, que no Flutter funciona como um Objeto de Valor constante
+// Enum Avançado(Value Objects), que no Flutter funciona como um Objeto de Valor constante
 enum TaskStatus {
   backlog('Backlog', 0xFF9E9E9E),
   todo('To do', 0xFF2196F3),

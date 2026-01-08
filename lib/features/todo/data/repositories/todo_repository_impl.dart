@@ -4,6 +4,7 @@ import 'package:poke_task_pro/features/todo/data/datasources/pokemon_remote_data
 import 'package:poke_task_pro/features/todo/domain/entities/task.dart';
 import 'package:poke_task_pro/features/todo/domain/repositories/todo_repository.dart';
 
+// Une o DataSource à lógica do Domínio.
 class TodoRepositoryImpl implements  TodoRepository {
   final PokemonRemoteDataSource remoteDataSource;
 

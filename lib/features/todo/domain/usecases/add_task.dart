@@ -1,6 +1,7 @@
 import 'package:poke_task_pro/features/todo/domain/entities/task.dart';
 import 'package:poke_task_pro/features/todo/domain/repositories/todo_repository.dart';
 
+// Contém a lógica de "como" uma tarefa deve ser criada.
 class AddTask {
   final TodoRepository repository;
 

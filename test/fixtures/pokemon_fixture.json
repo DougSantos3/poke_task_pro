@@ -1,0 +1,15 @@
+{
+  "id": 1,
+  "name": "bulbasaur",
+  "types": [
+    {
+      "type": {
+        "name": "grass"
+      }
+    }
+  ],
+  "sprites": 
+    { 
+        "front_default": "url_da_imagem" 
+    }
+}

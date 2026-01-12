@@ -17,4 +17,8 @@ class AddTask {
 
     return await repository.addTask(task);
   }
+
+  /* Na Clean Architecture, usamos a Injeção de Dependência. Isso significa que,
+   em vez de o AddTask criar o seu próprio repositório, alguém "de fora" 
+   entrega o repositório pronto para ele. */
 }

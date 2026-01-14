@@ -38,7 +38,7 @@ void main() {
         () async {
       // Arrange
       when(() => mockHttpClient.get(any())).thenAnswer(
-        (_) async => http.Response(fixture('Pokemon_fixture.json'), 200),
+        (_) async => http.Response(fixture('pokemon_fixture.json'), 200),
       );
       // Act
       final result = await dataSource.getPokemon(1);
@@ -54,8 +54,8 @@ void main() {
 
       // Act
       final call = dataSource.getPokemon;
-      // Assert 
-      expect(() => call(1), throwsException)
+      // Assert
+      expect(() => call(1), throwsException);
     });
   });
 }

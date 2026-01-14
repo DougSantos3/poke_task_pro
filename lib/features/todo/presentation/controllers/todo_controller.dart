@@ -3,7 +3,7 @@ import 'package:poke_task_pro/features/todo/domain/entities/task.dart';
 import 'package:poke_task_pro/features/todo/domain/entities/task_status.dart';
 import 'package:poke_task_pro/features/todo/domain/usecases/add_task.dart';
 
--/* Controller (ou Store) é quem gerencia o Estado. 
+/* Controller (ou Store) é quem gerencia o Estado. 
 
 Ela não sabe nada de banco de dados ou APIs; ela apenas pede ao Use Case para 
 realizar a ação e avisa a tela: "Ei, os dados mudaram, pode se atualizar!".

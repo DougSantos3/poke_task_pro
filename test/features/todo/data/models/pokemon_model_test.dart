@@ -4,9 +4,7 @@ import 'dart:io';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:poke_task_pro/features/todo/data/models/pokemon_model.dart';
 import 'package:poke_task_pro/features/todo/domain/entities/pokemon.dart';
-
-// This is the helper function to read the fixture file
-String fixture(String name) => File('test/fixtures/$name').readAsStringSync();
+import '../../../../fixtures/fixture_reader.dart';
 
 void main() {
   final tPokemonModel = PokemonModel(
@@ -22,6 +20,8 @@ void main() {
     expect(tPokemonModel, isA<Pokemon>());
   });
 
+  /*Este teste verifica se o seu fromJSON está mapeando os campos 
+  corretamente.*/
   test("Deve retornar um modelo válido a partir de um JSON", () {
     // Arrange
     final Map<String, dynamic> jsonMap =

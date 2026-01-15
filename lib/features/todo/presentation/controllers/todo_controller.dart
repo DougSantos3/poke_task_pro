@@ -9,8 +9,11 @@ Ela não sabe nada de banco de dados ou APIs; ela apenas pede ao Use Case para
 realizar a ação e avisa a tela: "Ei, os dados mudaram, pode se atualizar!".
 
 É essa classe. Ela é o cérebro da tela. Ela recebe o clique do botão, chama o 
-AddTask (Use Case) e guarda o resultado. */
+AddTask (Use Case) e guarda o resultado. 
 
+Usando ValueNotifier para gerenciar o estado da lista de tarefas sem depender 
+de frameworks complexos.
+*/
 class TodoController extends ValueNotifier<List<Task>> {
   final AddTask addTaskUseCase;
 

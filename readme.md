@@ -1,3 +1,28 @@
+# Install dependencies
+
+```bash
+flutter pub get
+```
+
+# List emulators
+```bash
+flutter emulators
+```
+
+# Launch emulator
+```bash
+flutter emulators --launch emulator-5554
+```
+
+# Run app
+```bash
+flutter run
+```
+
+# Run tests
+```bash
+flutter test
+```
 
 # Flow
 

@@ -31,6 +31,22 @@ class TodoController extends ValueNotifier<List<Task>> {
     }
   }
 
+  void updateTaskStatus(Task task, TaskStatus newStatus) {
+    final index = value.indexOf(task);
+    if (index != -1) {
+      final updatedTask = Task(
+        id: task.id,
+        title: task.title,
+        description: task.description,
+        status: newStatus, // Novo status vindo DragTarget
+        boardName: task.boardName,
+        pokemon: task.pokemon,
+      );
+      value[index] = updatedTask;
+      notifyListeners(); // notifica a tela para redesenhar
+    }
+  }
+
   /* Helper for filter to ask for collums of Trello
 
      Estado: É o value (a lista de List<Task>). Sempre que esse valor muda, 

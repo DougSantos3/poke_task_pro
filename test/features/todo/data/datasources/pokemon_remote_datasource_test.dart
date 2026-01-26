@@ -3,7 +3,6 @@ import 'package:mocktail/mocktail.dart';
 import 'package:http/http.dart' as http;
 import 'package:poke_task_pro/features/todo/data/datasources/pokemon_remote_datasource.dart';
 import 'package:poke_task_pro/features/todo/data/models/pokemon_model.dart';
-import 'dart:io';
 import '../../../../fixtures/fixture_reader.dart';
 
 class MockHttpClient extends Mock implements http.Client {}
@@ -48,9 +47,8 @@ void main() {
 
     test('Deve lançar uma Exception quando a resposta for 404 (Erro)', () {
       // Arrange
-      when(()=> mockHttpClient.get(any())).thenAnswer(
-        (_) async => http.Response('Algo deu errado', 404)
-      );
+      when(() => mockHttpClient.get(any()))
+          .thenAnswer((_) async => http.Response('Algo deu errado', 404));
 
       // Act
       final call = dataSource.getPokemon;

@@ -15,6 +15,7 @@ class BoardPage extends StatelessWidget {
           title: const Text('Poké-Task Trello'),
           backgroundColor: Colors.blueGrey[900]),
       // O ValueListenableBuilder faz a tela "escutar" a controller
+      // Reatividade: O ValueListenableBuilder percebe a mudança e reconstrói as colunas com os novos filtros.
       body: ValueListenableBuilder(
         valueListenable: controller,
         builder: (context, task, child) {

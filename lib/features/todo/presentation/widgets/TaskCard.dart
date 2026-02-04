@@ -7,6 +7,7 @@ class TaskCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // LongPressDraggable:Detecta o toque longo e inicia o rastreio da posição do mouse/dedo.
     return LongPressDraggable<Task>(
       data: task,
       feedback: Material(
@@ -19,6 +20,7 @@ class TaskCard extends StatelessWidget {
           child: Text(task.title),
         ),
       ),
+      // o card fica "transparente" na coluna de origem enquanto você o arrasta (graças ao childWhenDragging).
       childWhenDragging: Opacity(opacity: 0, child: _cardBody()),
       child: _cardBody(),
     );

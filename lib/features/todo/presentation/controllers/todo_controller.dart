@@ -13,6 +13,8 @@ AddTask (Use Case) e guarda o resultado.
 
 Usando ValueNotifier para gerenciar o estado da lista de tarefas sem depender 
 de frameworks complexos.
+
+Atualiza o status da tarefa na lista interna e chama o notifyListeners()
 */
 class TodoController extends ValueNotifier<List<Task>> {
   final AddTask addTaskUseCase;

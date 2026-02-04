@@ -13,8 +13,10 @@ class TrelloColumn extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    //para as colunas aceitarem a tarefa
+    // Para as colunas aceitarem a tarefa
+    // DragTarget: A coluna de destino detecta que um objeto do tipo Task entrou na sua área.
     return DragTarget<Task>(
+      // onAccept: Ao soltar, o DragTarget captura os dados da tarefa e chama controller.updateTaskStatus.
       onAcceptWithDetails: (task) {
         // Lógica de mudança de status ao soltar,
         //A coluna fica "vigiando" se alguma Task vai cair nela.

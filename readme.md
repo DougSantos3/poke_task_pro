@@ -1,3 +1,8 @@
+# When you start the project use this commands:
+```bash
+flutter create .
+```
+
 # Install dependencies
 ```bash
 flutter pub get

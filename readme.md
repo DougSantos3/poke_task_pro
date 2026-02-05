@@ -1,4 +1,4 @@
-# When you start the project use this commands:
+# When you start the project and create the folder android/ios/linux/macos/windows/web use this commands:
 ```bash
 flutter create .
 ```
